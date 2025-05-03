@@ -23,7 +23,7 @@ Represents the people using the platform.
 - email (string): Unique email address.
 - role (enum): Can be "host" or "guest".
 - created_at (timestamp): Account creation time.
-A user can:
+### A user can:
 - Host multiple properties.
 - Make multiple bookings.
 - Leave reviews on properties they’ve stayed in.
@@ -34,7 +34,7 @@ A user can:
 - title (string): Name of the property.
 - location (string): Geographic location.
 - price_per_night (decimal): Cost to stay per night.
-A property:
+### A property:
 - Belongs to a user (host).
 - Can have many bookings.
 - Can have multiple reviews.
@@ -45,7 +45,7 @@ Represents reservations made by guests.
 - property_id (UUID): References the booked property.
 - start_date (date): Check-in date.
 - end_date (date): Check-out date.
-A booking:
+### A booking:
 - Belongs to one user (guest).
 - Belongs to one property.
 ## Reviews
@@ -55,7 +55,7 @@ Feedback left by guests after a stay.
 - property_id (UUID): Property being reviewed.
 - rating (integer): Star rating (e.g., 1–5).
 - comment (text): Review content.
-A review:
+### A review:
 - Belongs to one user.
 - Belongs to one property.
 ## Payments
@@ -65,5 +65,5 @@ Tracks financial transactions related to bookings.
 - amount (decimal): Total amount paid.
 - status (enum): Payment status (e.g., "pending", "completed").
 - paid_at (timestamp): Time of payment.
-A payment:
+### A payment:
 - Belongs to one booking.
