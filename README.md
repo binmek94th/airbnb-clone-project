@@ -6,6 +6,7 @@
 - Database Administrator: Manages database design, indexing, and optimizations.
 - DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
 - QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
+
 # Technology Stack
 - Django: A high-level Python web framework used for building the RESTful API.
 - Django REST Framework: Provides tools for creating and managing RESTful APIs.
@@ -15,6 +16,7 @@
 - Redis: Used for caching and session management.
 - Docker: Containerization tool for consistent development and deployment environments.
 - CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
 # Database Design
 ## Users
 Represents the people using the platform.
@@ -67,3 +69,16 @@ Tracks financial transactions related to bookings.
 - paid_at (timestamp): Time of payment.
 ### A payment:
 - Belongs to one booking.
+- 
+# Feature Breakdown
+This project is built with modular, scalable components to support a smooth and secure property rental experience. Below are the core features and their functions:
+## User Management
+Handles user registration, authentication, and role-based access (host or guest). Ensures data privacy and tailored access to different parts of the system based on user type.
+## Property Management
+Allows hosts to create, update, and delete listings. Includes property details such as title, location, pricing, and availability to attract guests and enable easy discovery.
+## Booking System
+Enables guests to reserve properties by selecting available dates. Prevents overlapping bookings and ensures accurate availability tracking across the platform.
+## Payment Processing
+Securely handles transactions between guests and hosts. Tracks payment status and ensures all bookings are paid for before confirmation.
+## Review & Rating System
+Allows guests to leave reviews and star ratings after their stay. Helps build trust in listings and hosts, and enables a feedback loop for service improvement.
