@@ -82,3 +82,17 @@ Enables guests to reserve properties by selecting available dates. Prevents over
 Securely handles transactions between guests and hosts. Tracks payment status and ensures all bookings are paid for before confirmation.
 ## Review & Rating System
 Allows guests to leave reviews and star ratings after their stay. Helps build trust in listings and hosts, and enables a feedback loop for service improvement.
+
+# API Security
+Security is a critical aspect of this platform, especially when dealing with sensitive user data and financial transactions. The following measures will be implemented to ensure robust API protection and secure interactions.
+
+## Authentication
+All users must authenticate using secure methods (e.g., JWT or OAuth). This ensures that only verified users can access protected resources, reducing the risk of unauthorized access and identity spoofing.
+## Authorization
+Role-based access control (RBAC) ensures users can only perform actions permitted by their role (e.g., hosts can manage properties, but guests cannot). This helps maintain system integrity and prevents privilege escalation.
+## Rate Limiting
+Rate limiting is enforced to prevent abuse of the API through brute-force attacks or excessive requests. It protects server resources and ensures fair use among all users.
+## Data Encryption
+Sensitive data (like passwords and payment details) is encrypted both in transit (via HTTPS) and at rest. This protects against data breaches and man-in-the-middle attacks.
+## Input Validation & Sanitization
+All incoming data is validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This is crucial to ensure the integrity and security of the application.
