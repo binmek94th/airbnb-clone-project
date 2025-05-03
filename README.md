@@ -96,3 +96,16 @@ Rate limiting is enforced to prevent abuse of the API through brute-force attack
 Sensitive data (like passwords and payment details) is encrypted both in transit (via HTTPS) and at rest. This protects against data breaches and man-in-the-middle attacks.
 ## Input Validation & Sanitization
 All incoming data is validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This is crucial to ensure the integrity and security of the application.
+
+# CI/CD Pipeline
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of building, testing, and deploying code. Every change pushed to the repository is automatically validated through tests and deployed to the target environment if successful.
+
+## Why CI/CD Matters
+Faster Development Cycles: Automates repetitive tasks, allowing teams to deliver features and fixes more quickly.
+Improved Code Quality: Runs tests and linting tools on every change, helping catch bugs early.
+Deployment Confidence: Reduces human error and ensures a consistent, reliable deployment process.
+## Tools Used
+- GitHub Actions: For automating workflows such as running tests, checking code quality, and deploying.
+- Docker: For containerizing the application and ensuring it runs consistently across environments.
+- Docker Compose: For managing multi-container setups during development and testing.
+- PostgreSQL: Used in CI environments to test database integration.
