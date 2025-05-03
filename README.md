@@ -69,7 +69,6 @@ Tracks financial transactions related to bookings.
 - paid_at (timestamp): Time of payment.
 ### A payment:
 - Belongs to one booking.
-- 
 # Feature Breakdown
 This project is built with modular, scalable components to support a smooth and secure property rental experience. Below are the core features and their functions:
 ## User Management
