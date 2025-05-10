@@ -26,3 +26,6 @@
 ### 6. Message
 - Sent by **one User** (sender)
 - Received by **one User** (recipient)
+
+
+![Logo](./AirBnB_ERD.png)
